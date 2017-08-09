@@ -97,6 +97,10 @@ t = input("Rank for T from 4 (most) - 1 (least):")
 
 print("\n")
 
+print("Your Results")
+
+print("\n")
+
 orange = a + h + k + n + s
 green = b + g + i + m + t
 blue = c + f + j + o + r
