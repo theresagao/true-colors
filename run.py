@@ -53,7 +53,7 @@ print("J: Devoted, Warm, Poetic")
 print("K: Realistic, Open-minded, Adventuresome")
 print("L: Theoretical, Seeking, Ingenious")
 
-sprint("\n")
+print("\n")
 
 i = input("Rank for I from 4 (most) - 1 (least):")
 j = input("Rank for J from 4 (most) - 1 (least):")
@@ -102,6 +102,12 @@ green = b + g + i + m + t
 blue = c + f + j + o + r
 gold = d + e + l + p + q
 
+print("Your orange number value is: "+str(orange))
+print("Your green number value is: "+str(green))
+print("Your blue number value is: "+str(blue))
+print("Your gold number value is: "+str(gold))
+
+
 colors = dict() 
 
 colors["orange"] = orange
@@ -109,6 +115,10 @@ colors["green"] = green
 colors["blue"] = blue
 colors["gold"] = gold
 
-max(colors.iteritems(), key=operator.itemgetter(1))[0]
+max_color = max(colors, key=colors.get)
+
+print("\n")
+
+print("Your color is: " + str(max_color))
 
 
